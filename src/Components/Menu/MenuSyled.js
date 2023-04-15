@@ -7,7 +7,7 @@ const Div = styled.div`
     justify-content: center;
     z-index: 999;
     position: fixed;
-    left: 20px;
+    right: 25px;
     top: 20px;
     width: 60px;
     height: 58px;

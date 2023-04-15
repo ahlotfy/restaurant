@@ -19,6 +19,7 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "sass": "^1.61.0",
+    "shortid": "^2.2.16",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -31,8 +32,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {

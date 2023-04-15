@@ -6,6 +6,7 @@ const Div = styled.div`
     position: relative;
     min-height: 100vh;
     overflow: hidden;
+    background-color: black;
   }
   &.bg-box {
     position: absolute;
