@@ -34,7 +34,7 @@ const Login = () => {
       <Div className="container ">
         <Div className="box">
           <Div className="logo">
-            <Link href="/">Restourant</Link>
+            <Link to="/">Restourant</Link>
           </Div>
           <Div className="account-form ">
             <Div className="heading-signup">

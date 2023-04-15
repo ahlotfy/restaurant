@@ -4,18 +4,12 @@ import About from "./Components/About/About";
 import Book from "./Components/Book/Book";
 import Comments from "./Components/Comments/Comments";
 import FooterSection from "./Components/Footer/Footer";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Login from "./Components/Account/Login/Login";
 import SignUp from "./Components/Account/SignUp/SignUp";
 import "./Components/global.scss";
 import Menu from "./Components/Menu/Menu";
-import GlobalProviderForm, { useContextForm } from "./Context/ContextAPIForm";
+import GlobalProviderForm from "./Context/ContextAPIForm";
 import ForgotPassWord from "./Components/Account/ForgotPassword/ForgotPassword";
 import SignUpStepOne from "./Components/Account/SignUp/SignUpStepOne";
 import SignUpStepTwo from "./Components/Account/SignUp/SignUpStepTwo";
@@ -66,7 +60,20 @@ function App() {
               <Route path="steptwo" element={<ForgotPasswordStepTwo />} />
             </Route>
             <Route path="/delete_account" element={<DeleteAccount />} />
-            <Route path="*" element={<h1>Error</h1>} />
+            <Route
+              path="*"
+              element={
+                <>
+                  <h1>Error</h1>
+                  <span style={{ fontSize: "20px" }}>
+                    Go{" "}
+                    <Link style={{ color: "var(--mainColor)" }} to={"/"}>
+                      Home
+                    </Link>
+                  </span>
+                </>
+              }
+            />
           </Routes>
         </Router>
       </GlobalProviderForm>

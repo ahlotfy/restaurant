@@ -1,14 +1,12 @@
-import { useLocation } from "react-router-dom";
 import { useContextForm } from "../../Context/ContextAPIForm";
 import { useShoppingContext } from "../../Context/ShoppingContext";
 import { Nav, Link, Label, Ul, Button, Header, Input } from "./NavbarStyle";
 import Container from "react-bootstrap/Container";
+import { Link as LinkTo } from "react-router-dom";
 function Navbar() {
   const { cartQuantity, openCart } = useShoppingContext();
   const quantity = cartQuantity;
-  const location = useLocation();
   const { activeAccount } = useContextForm();
-
   return (
     <Header>
       <Container>
@@ -42,13 +40,11 @@ function Navbar() {
                 <Link href="#book_table">BOOKTABLE</Link>
               </li>
               <li>
-                <a
-                  href={
-                    activeAccount.email === undefined ? "/login" : "/profile"
-                  }
+                <LinkTo
+                  to={activeAccount.email === undefined ? "/login" : "/profile"}
                 >
-                  <i className="fa-solid fa-user"> </i>
-                </a>
+                  <i className="fa-solid fa-user" />
+                </LinkTo>
                 <i onClick={openCart} className="fa-solid fa-cart-shopping">
                   {quantity >= 1 && (
                     <span className="quantity-cart-value">{quantity}</span>

@@ -7,15 +7,27 @@ import ForgotPasswordStepThree from "./ForgotPasswordStepThree";
 import { useContextForm } from "../../../Context/ContextAPIForm";
 import { Link } from "react-router-dom";
 const ForgotPassWord = () => {
-  const { activeAccount } = useContextForm();
   const location = useLocation();
   const Navigate = useNavigate();
+  const { activeAccount } = useContextForm();
   const acc = sessionStorage.getItem("requestPassword")
     ? JSON.parse(sessionStorage.getItem("requestPassword"))
     : false;
   const vaild = sessionStorage.getItem("requestState")
     ? JSON.parse(sessionStorage.getItem("requestState"))
     : false;
+  useEffect(() => {
+    if (!(activeAccount.email === undefined)) {
+      if (
+        location.pathname === "/forgotpassword" ||
+        location.pathname === "/forgotpassword/stepone" ||
+        location.pathname === "/forgotpassword/steptwo" ||
+        location.pathname === "/forgotpassword/stepthree"
+      ) {
+        Navigate("/profile", { replace: true });
+      }
+    }
+  });
   if (acc === false) {
     if (
       location.pathname === "/forgotpassword/steptwo" ||
@@ -28,18 +40,6 @@ const ForgotPassWord = () => {
       Navigate("/forgotpassword", { replace: true });
     }
   }
-  useEffect(() => {
-    if (activeAccount === {}) {
-      if (
-        location.pathname === "/forgotpassword" ||
-        location.pathname === "/forgotpassword/stepone" ||
-        location.pathname === "/forgotpassword/steptwo" ||
-        location.pathname === "/forgotpassword/stepthree"
-      ) {
-        Navigate("/profile", { replace: true });
-      }
-    }
-  });
   return (
     <>
       <Div className="account-section">

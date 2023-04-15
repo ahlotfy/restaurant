@@ -9,7 +9,6 @@ const ForgotPasswordStepThree = () => {
   const acc = sessionStorage.getItem("requestPassword")
     ? JSON.parse(sessionStorage.getItem("requestPassword"))
     : "";
-  console.log(acc);
   return (
     <Div className="form-row form-steps" ref={slideThree}>
       <Div className="full-column">
@@ -23,9 +22,9 @@ const ForgotPasswordStepThree = () => {
             <h1>Succeeded</h1>
           </Div>
           <p>The password has been sent to the email...</p>
-          <span>{`${acc?.email.slice(0, 3)}************ ${acc?.email.slice(
-            -4
-          )}`}</span>
+          <span>{`${acc ? acc.email.slice(0, 3) : ""}************${
+            acc ? acc.email.slice(-4) : ""
+          }`}</span>
         </Div>
         <Div className="form-row">
           <Div className="next-btn full-column">
