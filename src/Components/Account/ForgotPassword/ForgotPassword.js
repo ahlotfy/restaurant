@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Div } from "../SignUpStyled";
+import { Div } from "../AccountStyled";
 import { useLocation, useNavigate } from "react-router-dom";
 import ForgotPasswordStepOne from "./ForgotPasswordStepOne";
 import ForgotPasswordStepTwo from "./ForgotPasswordStepTwo";
@@ -50,7 +50,7 @@ const ForgotPassWord = () => {
             </Div>
             <Div className="account-form ">
               <Div className="heading-signup">
-                <h1>Forget Password</h1>
+                <h1>Reset Password</h1>
               </Div>
               <form action="/">
                 {location.pathname === "/forgotpassword/stepone" ? (

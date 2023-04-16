@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Div } from "../SignUpStyled";
+import { Div } from "../AccountStyled";
 import { Navigate, useLocation } from "react-router-dom";
 import UpdateAccountStepOne from "./UpdateAccountStepOne";
 import UpdateAccountStepTwo from "./UpdateAccountStepTwo";

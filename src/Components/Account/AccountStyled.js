@@ -21,7 +21,6 @@ const Div = styled.div`
   &.account-section {
     width: 100%;
     min-height: 100vh;
-    background-color: #0d0a2b;
     font-weight: 500;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -58,8 +57,6 @@ const Div = styled.div`
     border-radius: 10px;
     padding: 30px;
     margin: auto;
-    color: var(--white);
-    background-color: black;
     overflow: hidden;
     .heading-signup {
       text-align: center;
@@ -112,7 +109,6 @@ const Div = styled.div`
   .already-have,
   .forgot-password {
     text-align: center;
-    color: var(--white);
     padding: 15px 0;
     font-size: 20px;
     a {
@@ -206,7 +202,6 @@ const Div = styled.div`
     height: 45px;
     font-size: 20px;
     background-color: transparent;
-    color: white;
     width: 100%;
     border: none;
     outline: 2px solid #bdbcbc;

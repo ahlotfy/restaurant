@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Div } from "../SignUpStyled";
+import { Div } from "../AccountStyled";
 import vezaIcon from "../../images/vezaIcon.jpg";
 import masterCardLogo from "../../images/mastercardIogo.jpg";
 import { useContextForm } from "../../../Context/ContextAPIForm";
@@ -109,8 +109,8 @@ const SignUPStepThree = () => {
       stepThreeDone = false;
       Navigate("/signup/steptwo", { replace: true });
     }
+    loadingLine.current.style.animationDuration = "1s";
     if (stepThreeDone) {
-      loadingLine.current.style.animationDuration = "1s";
       submitForm();
       stepsDone();
       deleteSessionStorage();

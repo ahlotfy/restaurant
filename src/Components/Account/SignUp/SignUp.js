@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Div } from "../SignUpStyled";
+import { Div } from "../AccountStyled";
 import SignUpStepOne from "./SignUpStepOne";
 import SignUpStepTwo from "./SignUpStepTwo";
 import SignUPStepThree from "./SignUPStepThree";
@@ -33,7 +33,7 @@ const SignUp = () => {
           <form action="/">
             <Div className="account-form ">
               <Div className="heading-signup">
-                <h1>Sign up</h1>
+                <h1>Signup</h1>
               </Div>
               <Div>
                 {location.pathname === "/signup/stepone" ? (

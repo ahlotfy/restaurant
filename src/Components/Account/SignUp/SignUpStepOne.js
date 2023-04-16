@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Div } from "../SignUpStyled";
+import { Div } from "../AccountStyled";
 import { useContextForm } from "../../../Context/ContextAPIForm";
 import { useNavigate } from "react-router-dom";
 const SignUpStepOne = () => {
@@ -68,7 +68,7 @@ const SignUpStepOne = () => {
     if (stepOneDone) {
       stepsDone();
       slideOne.current.style.opacity = "0.6";
-      loadingLine.current.style.animationDuration = "1.5s";
+      loadingLine.current.style.animationDuration = "1s";
       setTimeout(() => {
         Navigate("/signup/steptwo", { replace: true });
       }, 800);

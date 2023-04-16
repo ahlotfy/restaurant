@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Div, Select } from "../SignUpStyled";
+import { Div, Select } from "../AccountStyled";
 import { useContextForm } from "../../../Context/ContextAPIForm";
 import { useNavigate } from "react-router-dom";
 

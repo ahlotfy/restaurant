@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Div } from "../SignUpStyled";
+import { Div } from "../AccountStyled";
 import { useContextForm } from "../../../Context/ContextAPIForm";
 import { useNavigate } from "react-router-dom";
 const UpdateAccountStepOne = () => {

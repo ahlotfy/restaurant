@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Div } from "../SignUpStyled";
+import { Div } from "../AccountStyled";
 import { useNavigate } from "react-router-dom";
 import { useContextForm } from "../../../Context/ContextAPIForm";
 const ForgotPasswordStepOne = () => {
