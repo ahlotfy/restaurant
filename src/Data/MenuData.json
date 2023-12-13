@@ -1,0 +1,78 @@
+    [
+        {
+            "id": 1,
+            "img": "imgs/f1.png",
+            "name": "Delicious Pizza",
+            "para": "Veniam debitis quaerat officiis quasi cupiditate quo,quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price": 10.0,
+            "discount": 15.0,
+            "offer": 15,
+            "type": "pizza"
+        },
+        {
+            "id": 2,
+            "img": "imgs/f2.png",
+            "name": "Delicious Burgar",
+            "para": "Veniam debitis quaerat officiis quasi cupiditate quo,quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price": 10.0,
+            "type": "burgar"
+        },
+        {
+            "id": 3,
+            "img": "imgs/f3.png",
+            "name": "Delicious Pizza",
+            "para": "Veniam debitis quaerat officiis quasi cupiditate quo,quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price": 12.0,
+            "type": "pizza"
+        },
+        {
+            "id": 4,
+            "img": "imgs/f4.png",
+            "name": "Delicious Pasta",
+            "para": "Veniam debitis quaerat officiis quasi cupiditate quo,quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price": 14.0,
+            "type": "pasta"
+        },
+        {
+            "id": 5,
+            "img": "imgs/f5.png",
+            "name": "Delicious Fries",
+            "para": "Veniam debitis quaerat officiis quasi cupiditate quo,quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price": 3.0,
+            "type": "fries"
+        },
+        {
+            "id": 6,
+            "img": "imgs/f6.png",
+            "name": "Delicious Pizza",
+            "para": "Veniam debitis quaerat officiis quasi cupiditate quo,quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price": 15.0,
+            "type": "pizza"
+        },
+        {
+            "id": 7,
+            "img": "imgs/f7.png",
+            "name": "Delicious Burgar",
+            "para": "Veniam debitis quaerat officiis quasi cupiditate quo,quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price": 12.0,
+            "type": "burgar"
+        },
+        {
+            "id": 8,
+            "img": "imgs/f8.png",
+            "name": "Delicious Burgar",
+            "para": "Veniam debitis quaerat officiis quasi cupiditate quo,quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price": 8.0,
+            "discount": 14.0,
+            "offer": 20,
+            "type": "burgar"
+        },
+        {
+            "id": 9,
+            "img": "imgs/f9.png",
+            "name": "Delicious pasta",
+            "para": "Veniam debitis quaerat officiis quasi cupiditate quo,quisquam velit, magnam voluptatem repellendus sed eaque",
+            "price": 10.0,
+            "type": "pasta"
+        }
+    ]
